@@ -15,7 +15,7 @@
 @property (nonatomic, copy) NSMutableArray *masterShelfList;
 
 - (NSUInteger)countOfList;
-- (void)addLibraryWithLibrary:(FellowsShelf *)newLibrary;
+- (void)addShelfWithShelf:(FellowsShelf *)newShelf;
 - (FellowsShelf *)objectInListAtIndex:(NSUInteger)theIndex;
 
 @end

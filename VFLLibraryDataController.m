@@ -21,12 +21,19 @@
 
     NSArray *demoLibraries = [NSArray arrayWithObjects:@"Seattle Public Library", @"King County Library", @"Vestal Hills Library", nil];
 
+    NSArray *demoShelves = [NSArray arrayWithObjects:@"Fiction", @"Non Fiction", nil];
+
     FellowsLibrary *newLibrary;
+    FellowsShelf *newShelf;
 
     for(id curLibrary in demoLibraries){
         newLibrary = NULL;
         newLibrary = [[FellowsLibrary alloc] initWithName:curLibrary];
         [self addLibraryWithLibrary:newLibrary];
+        for(id curShelf in demoShelves){
+            newShelf = NULL;
+            newShelf = [[FellowsShelf alloc] initWithName:curShelf WithLibrary:newLibrary];
+        } 
     }
 }
 
