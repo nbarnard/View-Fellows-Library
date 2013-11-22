@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class Fellows_Library;
+@class FellowsLibrary;
 
 @interface VFLDetailViewController : UIViewController
 
-@property (strong, nonatomic) Fellows_Library *library;
+@property (strong, nonatomic) FellowsLibrary *library;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 

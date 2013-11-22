@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11C1D368183F2A09004F8C41 /* VFLShelfDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C1D367183F2A09004F8C41 /* VFLShelfDataController.m */; };
 		11E39A7C183ED0E1007C0D08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E39A7B183ED0E1007C0D08 /* Foundation.framework */; };
 		11E39A7E183ED0E1007C0D08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E39A7D183ED0E1007C0D08 /* CoreGraphics.framework */; };
 		11E39A80183ED0E1007C0D08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E39A7F183ED0E1007C0D08 /* UIKit.framework */; };
@@ -22,7 +23,7 @@
 		11E39AA0183ED0E1007C0D08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E39A7F183ED0E1007C0D08 /* UIKit.framework */; };
 		11E39AA8183ED0E1007C0D08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11E39AA6183ED0E1007C0D08 /* InfoPlist.strings */; };
 		11E39AAA183ED0E1007C0D08 /* View_Fellows_LibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39AA9183ED0E1007C0D08 /* View_Fellows_LibraryTests.m */; };
-		11E39AB8183ED195007C0D08 /* Fellows_Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39AB7183ED195007C0D08 /* Fellows_Library.m */; };
+		11E39AB8183ED195007C0D08 /* FellowsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39AB7183ED195007C0D08 /* FellowsLibrary.m */; };
 		11FCAC8F183F18E8006B8E05 /* VFLLibraryDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FCAC8E183F18E8006B8E05 /* VFLLibraryDataController.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11C1D366183F2A09004F8C41 /* VFLShelfDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFLShelfDataController.h; sourceTree = "<group>"; };
+		11C1D367183F2A09004F8C41 /* VFLShelfDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFLShelfDataController.m; sourceTree = "<group>"; };
 		11E39A78183ED0E1007C0D08 /* View Fellows Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "View Fellows Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E39A7B183ED0E1007C0D08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11E39A7D183ED0E1007C0D08 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,8 +61,8 @@
 		11E39AA5183ED0E1007C0D08 /* View Fellows LibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "View Fellows LibraryTests-Info.plist"; sourceTree = "<group>"; };
 		11E39AA7183ED0E1007C0D08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11E39AA9183ED0E1007C0D08 /* View_Fellows_LibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View_Fellows_LibraryTests.m; sourceTree = "<group>"; };
-		11E39AB6183ED195007C0D08 /* Fellows_Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fellows_Library.h; path = "../../FellowsLibrary/Fellows Library/Fellows_Library.h"; sourceTree = "<group>"; };
-		11E39AB7183ED195007C0D08 /* Fellows_Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fellows_Library.m; path = "../../FellowsLibrary/Fellows Library/Fellows_Library.m"; sourceTree = "<group>"; };
+		11E39AB6183ED195007C0D08 /* FellowsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FellowsLibrary.h; path = "../../FellowsLibrary/Fellows Library/FellowsLibrary.h"; sourceTree = "<group>"; };
+		11E39AB7183ED195007C0D08 /* FellowsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FellowsLibrary.m; path = "../../FellowsLibrary/Fellows Library/FellowsLibrary.m"; sourceTree = "<group>"; };
 		11FCAC8D183F18E8006B8E05 /* VFLLibraryDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VFLLibraryDataController.h; path = ../VFLLibraryDataController.h; sourceTree = "<group>"; };
 		11FCAC8E183F18E8006B8E05 /* VFLLibraryDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VFLLibraryDataController.m; path = ../VFLLibraryDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,10 +124,12 @@
 		11E39A81183ED0E1007C0D08 /* View Fellows Library */ = {
 			isa = PBXGroup;
 			children = (
-				11E39AB6183ED195007C0D08 /* Fellows_Library.h */,
-				11E39AB7183ED195007C0D08 /* Fellows_Library.m */,
+				11E39AB6183ED195007C0D08 /* FellowsLibrary.h */,
+				11E39AB7183ED195007C0D08 /* FellowsLibrary.m */,
 				11FCAC8D183F18E8006B8E05 /* VFLLibraryDataController.h */,
 				11FCAC8E183F18E8006B8E05 /* VFLLibraryDataController.m */,
+				11C1D366183F2A09004F8C41 /* VFLShelfDataController.h */,
+				11C1D367183F2A09004F8C41 /* VFLShelfDataController.m */,
 				11E39A8A183ED0E1007C0D08 /* VFLAppDelegate.h */,
 				11E39A8B183ED0E1007C0D08 /* VFLAppDelegate.m */,
 				11E39A8D183ED0E1007C0D08 /* Main.storyboard */,
@@ -268,8 +273,9 @@
 				11FCAC8F183F18E8006B8E05 /* VFLLibraryDataController.m in Sources */,
 				11E39A92183ED0E1007C0D08 /* VFLMasterViewController.m in Sources */,
 				11E39A88183ED0E1007C0D08 /* main.m in Sources */,
-				11E39AB8183ED195007C0D08 /* Fellows_Library.m in Sources */,
+				11E39AB8183ED195007C0D08 /* FellowsLibrary.m in Sources */,
 				11E39A95183ED0E1007C0D08 /* VFLDetailViewController.m in Sources */,
+				11C1D368183F2A09004F8C41 /* VFLShelfDataController.m in Sources */,
 				11E39A8C183ED0E1007C0D08 /* VFLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

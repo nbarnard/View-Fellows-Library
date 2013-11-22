@@ -7,7 +7,7 @@
 //
 
 #import "VFLLibraryDataController.h"
-#import "Fellows_Library.h"
+#import "FellowsLibrary.h"
 
 @interface VFLLibraryDataController ()
 - (void)initializeDefaultDataList;
@@ -19,21 +19,18 @@
     NSMutableArray *libraryList = [[NSMutableArray alloc] init];
     self.masterLibraryList = libraryList;
 
-    Fellows_Library *newLibrary;
+    NSArray *demoLibraries = [NSArray arrayWithObjects:@"Seattle Public Library", @"King County Library", @"Vestal Hills Library", nil];
 
-    newLibrary = [[Fellows_Library alloc] initWithName:@"Seattle Public"];
+    FellowsLibrary *newLibrary;
 
-    [self addLibraryWithLibrary:newLibrary];
-
-    newLibrary = NULL;
-
-    newLibrary = [[Fellows_Library alloc] initWithName:@"King County Library"];
-
-    [self addLibraryWithLibrary:newLibrary];
-
+    for(id curLibrary in demoLibraries){
+        newLibrary = NULL;
+        newLibrary = [[FellowsLibrary alloc] initWithName:curLibrary];
+        [self addLibraryWithLibrary:newLibrary];
+    }
 }
 
-- (void)addLibraryWithLibrary:(Fellows_Library *)newLibrary {
+- (void)addLibraryWithLibrary:(FellowsLibrary *)newLibrary {
     [self.masterLibraryList addObject:newLibrary];
 }
 
@@ -45,7 +42,7 @@
     return nil;
 }
 
-- (Fellows_Library *)objectInListAtIndex:(NSUInteger)theIndex {
+- (FellowsLibrary *)objectInListAtIndex:(NSUInteger)theIndex {
     return [self.masterLibraryList objectAtIndex:theIndex];
 }
 

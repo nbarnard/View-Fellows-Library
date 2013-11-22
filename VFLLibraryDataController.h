@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@class Fellows_Library;
+@class FellowsLibrary;
 @interface VFLLibraryDataController : NSObject
 
 @property (nonatomic, copy) NSMutableArray *masterLibraryList;
 
 - (NSUInteger)countOfList;
-- (void)addLibraryWithLibrary:(Fellows_Library *)newLibrary;
-- (Fellows_Library *)objectInListAtIndex:(NSUInteger)theIndex;
+- (void)addLibraryWithLibrary:(FellowsLibrary *)newLibrary;
+- (FellowsLibrary *)objectInListAtIndex:(NSUInteger)theIndex;
 
 @end

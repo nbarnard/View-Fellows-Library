@@ -10,7 +10,7 @@
 
 #import "VFLDetailViewController.h"
 #import "VFLLibraryDataController.h"
-#import "Fellows_Library.h"
+#import "FellowsLibrary.h"
 
 @implementation VFLMasterViewController
 
@@ -71,7 +71,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifer];
 
 
-    Fellows_Library *libraryAtIndex = [self.dataController objectInListAtIndex:indexPath.row];
+    FellowsLibrary *libraryAtIndex = [self.dataController objectInListAtIndex:indexPath.row];
 
     [[cell textLabel] setText:libraryAtIndex.name];
 
