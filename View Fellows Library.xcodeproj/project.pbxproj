@@ -22,6 +22,8 @@
 		11E39AA0183ED0E1007C0D08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E39A7F183ED0E1007C0D08 /* UIKit.framework */; };
 		11E39AA8183ED0E1007C0D08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11E39AA6183ED0E1007C0D08 /* InfoPlist.strings */; };
 		11E39AAA183ED0E1007C0D08 /* View_Fellows_LibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39AA9183ED0E1007C0D08 /* View_Fellows_LibraryTests.m */; };
+		11E39AB8183ED195007C0D08 /* Fellows_Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39AB7183ED195007C0D08 /* Fellows_Library.m */; };
+		11FCAC8F183F18E8006B8E05 /* VFLLibraryDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FCAC8E183F18E8006B8E05 /* VFLLibraryDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		11E39AA5183ED0E1007C0D08 /* View Fellows LibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "View Fellows LibraryTests-Info.plist"; sourceTree = "<group>"; };
 		11E39AA7183ED0E1007C0D08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11E39AA9183ED0E1007C0D08 /* View_Fellows_LibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View_Fellows_LibraryTests.m; sourceTree = "<group>"; };
+		11E39AB6183ED195007C0D08 /* Fellows_Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fellows_Library.h; path = "../../FellowsLibrary/Fellows Library/Fellows_Library.h"; sourceTree = "<group>"; };
+		11E39AB7183ED195007C0D08 /* Fellows_Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fellows_Library.m; path = "../../FellowsLibrary/Fellows Library/Fellows_Library.m"; sourceTree = "<group>"; };
+		11FCAC8D183F18E8006B8E05 /* VFLLibraryDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VFLLibraryDataController.h; path = ../VFLLibraryDataController.h; sourceTree = "<group>"; };
+		11FCAC8E183F18E8006B8E05 /* VFLLibraryDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VFLLibraryDataController.m; path = ../VFLLibraryDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 		11E39A81183ED0E1007C0D08 /* View Fellows Library */ = {
 			isa = PBXGroup;
 			children = (
+				11E39AB6183ED195007C0D08 /* Fellows_Library.h */,
+				11E39AB7183ED195007C0D08 /* Fellows_Library.m */,
+				11FCAC8D183F18E8006B8E05 /* VFLLibraryDataController.h */,
+				11FCAC8E183F18E8006B8E05 /* VFLLibraryDataController.m */,
 				11E39A8A183ED0E1007C0D08 /* VFLAppDelegate.h */,
 				11E39A8B183ED0E1007C0D08 /* VFLAppDelegate.m */,
 				11E39A8D183ED0E1007C0D08 /* Main.storyboard */,
@@ -255,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FCAC8F183F18E8006B8E05 /* VFLLibraryDataController.m in Sources */,
 				11E39A92183ED0E1007C0D08 /* VFLMasterViewController.m in Sources */,
 				11E39A88183ED0E1007C0D08 /* main.m in Sources */,
+				11E39AB8183ED195007C0D08 /* Fellows_Library.m in Sources */,
 				11E39A95183ED0E1007C0D08 /* VFLDetailViewController.m in Sources */,
 				11E39A8C183ED0E1007C0D08 /* VFLAppDelegate.m in Sources */,
 			);
@@ -467,6 +479,7 @@
 				11E39AAF183ED0E1007C0D08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11E39AB0183ED0E1007C0D08 /* Build configuration list for PBXNativeTarget "View Fellows LibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +488,7 @@
 				11E39AB2183ED0E1007C0D08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

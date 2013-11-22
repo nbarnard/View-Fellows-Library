@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class Fellows_Library;
+
 @interface VFLDetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Fellows_Library *library;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
 @end

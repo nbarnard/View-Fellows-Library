@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class VFLLibraryDataController;
+
 @interface VFLMasterViewController : UITableViewController
+
+@property (strong, nonatomic) VFLLibraryDataController *dataController;
 
 @end

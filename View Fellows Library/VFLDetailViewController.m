@@ -7,6 +7,7 @@
 //
 
 #import "VFLDetailViewController.h"
+#import "Fellows_Library.h"
 
 @interface VFLDetailViewController ()
 - (void)configureView;
@@ -16,22 +17,24 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
+- (void)setLibraryItem:(Fellows_Library *)newLibrary {
+    if (_library != newLibrary) {
+        _library = newLibrary;
     }
+
+    // Update the view.
+        [self configureView];
 }
+
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
+// Update the user interface for the detail item.
 
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+    Fellows_Library *theLibrary = self.library;
+
+    if(theLibrary) {
+        self.nameLabel.text = theLibrary.name;
     }
 }
 
