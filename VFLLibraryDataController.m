@@ -25,6 +25,12 @@
 
     [self addLibraryWithLibrary:newLibrary];
 
+    newLibrary = NULL;
+
+    newLibrary = [[Fellows_Library alloc] initWithName:@"King County Library"];
+
+    [self addLibraryWithLibrary:newLibrary];
+
 }
 
 - (void)addLibraryWithLibrary:(Fellows_Library *)newLibrary {
@@ -50,7 +56,7 @@
 
 - (void)setMasterLibraryList:(NSMutableArray *)newList {
     if (_masterLibraryList != newList) {
-        _masterLibraryList = [ newList copy];
+        _masterLibraryList = [ newList mutableCopy];
     }
 }
 
