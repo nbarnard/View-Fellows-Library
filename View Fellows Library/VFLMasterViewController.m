@@ -11,6 +11,7 @@
 #import "VFLDetailViewController.h"
 #import "VFLLibraryDataController.h"
 #import "FellowsLibrary.h"
+#import "VFLLibraryTableViewCell.h"
 
 @implementation VFLMasterViewController
 
@@ -65,15 +66,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifer = @"LibraryNameCell";
 
-
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifer];
-
+    VFLLibraryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"LibraryNameCell"];
 
     FellowsLibrary *libraryAtIndex = [self.dataController objectInListAtIndex:indexPath.row];
 
     [[cell textLabel] setText:libraryAtIndex.name];
+    cell.library = libraryAtIndex;
 
     return cell;
 }
@@ -115,11 +114,23 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-/*    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+
+    UITableViewCell *cell = sender;
+
+    UILabel *label = cell.textLabel;
+
+    NSLog(label.text);
+
+    NSLog([segue identifier]);
+
+    NSLog(NSStringFromClass([sender class]));
+    NSLog(NSStringFromClass([segue class]));
+    NSLog(NSStringFromClass([segue.sourceViewController class]));
+
+
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        [[segue destinationViewController] setDetailItem:object];
-    }
-*/
+
+
  }
 
 @end
