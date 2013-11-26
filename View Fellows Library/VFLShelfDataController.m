@@ -9,18 +9,10 @@
 #import "VFLShelfDataController.h"
 
 @interface VFLShelfDataController ()
-- (void)initializeDefaultDataList;
+
 @end
 
 @implementation VFLShelfDataController
-
--(void)initializeDefaultDataList {
-    
-}
-
-- (void)addShelfWithShelf:(FellowsShelf *)newShelf {
-    [self.masterShelfList addObject:newShelf];
-}
 
 - (FellowsShelf *)objectInListAtIndex:(NSUInteger)theIndex {
     return [self.masterShelfList objectAtIndex:theIndex];
@@ -29,5 +21,12 @@
 - (NSUInteger)countOfList {
     return [self.masterShelfList count];
 }
+
+- (void)setMasterShelfList:(NSMutableArray *)newList {
+    if(_masterShelfList != newList) {
+        _masterShelfList = [newList mutableCopy];
+    }
+}
+
 
 @end

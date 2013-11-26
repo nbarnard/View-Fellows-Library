@@ -61,7 +61,7 @@
 
 - (void)setMasterLibraryList:(NSMutableArray *)newList {
     if (_masterLibraryList != newList) {
-        _masterLibraryList = [ newList mutableCopy];
+        _masterLibraryList = [newList mutableCopy];
     }
 }
 

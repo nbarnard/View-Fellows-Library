@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class VFLShelvesDataController;
+@class VFLShelfDataController;
 
-@interface VFLShelvesViewController : UITableViewController
+@interface VFLShelfViewController : UITableViewController
 
-@property (strong, nonatomic) VFLShelvesDataController *shelvesDataController;
+@property (strong, nonatomic) VFLShelfDataController *dataController;
 
 @end

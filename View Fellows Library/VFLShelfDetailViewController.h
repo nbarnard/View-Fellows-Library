@@ -10,7 +10,7 @@
 
 @class FellowsShelf;
 
-@interface VFLShelvesDetailViewController : UIViewController
+@interface VFLShelfDetailViewController : UIViewController
 
 @property (strong, nonatomic) FellowsShelf *shelf;
 @property (weak, nonatomic) IBOutlet UILabel *shelfLabel;

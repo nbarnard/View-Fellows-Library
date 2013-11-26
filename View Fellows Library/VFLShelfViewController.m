@@ -6,19 +6,25 @@
 //  Copyright (c) 2013 NMFF Development. All rights reserved.
 //
 
-#import "VFLShelvesViewController.h"
+#import "VFLShelfViewController.h"
 
-#import "VFLShelvesDetailViewController.h"
+#import "VFLShelfDetailViewController.h"
 #import "VFLShelfDataController.h"
 #import "FellowsLibrary.h"
 
-@interface VFLShelvesViewController ()
+//@interface VFLShelfViewController ()
+//
+//@end
 
-@end
-
-@implementation VFLShelvesViewController
+@implementation VFLShelfViewController
 
 @class VFLShelfDataController;
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    self.dataController = [[VFLShelfDataController alloc] init];
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -56,9 +62,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
-    return 2;
-    //return [self.shelvesDataController countOfList];
+    NSLog(@"here!!!!");
+
+    NSInteger numberOfRows = [self.dataController countOfList];
+
+    NSLog(@"Number of Rows: %ld", (long) numberOfRows);
+    // Return the number.of rows in the section.
+    return numberOfRows;
+    //    return [self.dataController countOfList];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

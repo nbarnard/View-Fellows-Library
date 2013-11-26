@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 NMFF Development. All rights reserved.
 //
 
-#import "VFLShelvesDetailViewController.h"
+#import "VFLShelfDetailViewController.h"
 #import "FellowsLibrary.h"
 
-@interface VFLShelvesDetailViewController ()
+@interface VFLShelfDetailViewController ()
 - (void)configureView;
 @end
 
-@implementation VFLShelvesDetailViewController
+@implementation VFLShelfDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

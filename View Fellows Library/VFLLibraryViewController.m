@@ -12,10 +12,13 @@
 #import "VFLLibraryDataController.h"
 #import "FellowsLibrary.h"
 #import "VFLLibraryTableViewCell.h"
+#import "VFLShelfViewController.h"
+#import "VFLShelfDataController.h"
 
 @implementation VFLLibraryViewController
 
 @class VFLLibraryDataController;
+@class VFLShelfDataController;
 
 - (void)awakeFromNib
 {
@@ -120,8 +123,16 @@
 
     FellowsLibrary *currentLibrary = cell.library;
 
+    VFLShelfViewController *shelfViewController = segue.destinationViewController;
+
+    VFLShelfDataController *currentShelfDataController = shelfViewController.dataController;
+
+    currentShelfDataController.masterShelfList = currentLibrary.shelvesInLibrary;
+
     NSLog(@"destViewController");
     NSLog(NSStringFromClass([segue.destinationViewController class]));
+
+
 
 
  /*
