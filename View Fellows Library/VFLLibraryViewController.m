@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 NMFF Development. All rights reserved.
 //
 
-#import "VFLMasterViewController.h"
+#import "VFLLibraryViewController.h"
 
-#import "VFLDetailViewController.h"
+#import "VFLLibraryDetailViewController.h"
 #import "VFLLibraryDataController.h"
 #import "FellowsLibrary.h"
 #import "VFLLibraryTableViewCell.h"
 
-@implementation VFLMasterViewController
+@implementation VFLLibraryViewController
 
 @class VFLLibraryDataController;
 
@@ -115,21 +115,41 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 
-    UITableViewCell *cell = sender;
+    VFLLibraryTableViewCell *cell = sender;
 
+
+    FellowsLibrary *currentLibrary = cell.library;
+
+    NSLog(@"destViewController");
+    NSLog(NSStringFromClass([segue.destinationViewController class]));
+
+
+ /*
+  Fun learning about this stuff stuff.
     UILabel *label = cell.textLabel;
 
+    NSLog(@"Label");
     NSLog(label.text);
 
+    NSLog(@"Segue ID");
     NSLog([segue identifier]);
 
+    NSLog(@"Sender Class");
     NSLog(NSStringFromClass([sender class]));
+
+    NSLog(@"Segue Class");
     NSLog(NSStringFromClass([segue class]));
+
+    NSLog(@"sourceViewController");
     NSLog(NSStringFromClass([segue.sourceViewController class]));
 
 
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
 
+
+    NSLog(@"Library Name");
+    NSLog(currentLibrary.name);
+
+  */
 
  }
 

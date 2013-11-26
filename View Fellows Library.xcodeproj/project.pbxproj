@@ -18,8 +18,8 @@
 		11E39A88183ED0E1007C0D08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39A87183ED0E1007C0D08 /* main.m */; };
 		11E39A8C183ED0E1007C0D08 /* VFLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39A8B183ED0E1007C0D08 /* VFLAppDelegate.m */; };
 		11E39A8F183ED0E1007C0D08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E39A8D183ED0E1007C0D08 /* Main.storyboard */; };
-		11E39A92183ED0E1007C0D08 /* VFLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39A91183ED0E1007C0D08 /* VFLMasterViewController.m */; };
-		11E39A95183ED0E1007C0D08 /* VFLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39A94183ED0E1007C0D08 /* VFLDetailViewController.m */; };
+		11E39A92183ED0E1007C0D08 /* VFLLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39A91183ED0E1007C0D08 /* VFLLibraryViewController.m */; };
+		11E39A95183ED0E1007C0D08 /* VFLLibraryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E39A94183ED0E1007C0D08 /* VFLLibraryDetailViewController.m */; };
 		11E39A97183ED0E1007C0D08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E39A96183ED0E1007C0D08 /* Images.xcassets */; };
 		11E39A9E183ED0E1007C0D08 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E39A9D183ED0E1007C0D08 /* XCTest.framework */; };
 		11E39A9F183ED0E1007C0D08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E39A7B183ED0E1007C0D08 /* Foundation.framework */; };
@@ -60,10 +60,10 @@
 		11E39A8A183ED0E1007C0D08 /* VFLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFLAppDelegate.h; sourceTree = "<group>"; };
 		11E39A8B183ED0E1007C0D08 /* VFLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFLAppDelegate.m; sourceTree = "<group>"; };
 		11E39A8E183ED0E1007C0D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		11E39A90183ED0E1007C0D08 /* VFLMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFLMasterViewController.h; sourceTree = "<group>"; };
-		11E39A91183ED0E1007C0D08 /* VFLMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFLMasterViewController.m; sourceTree = "<group>"; };
-		11E39A93183ED0E1007C0D08 /* VFLDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFLDetailViewController.h; sourceTree = "<group>"; };
-		11E39A94183ED0E1007C0D08 /* VFLDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFLDetailViewController.m; sourceTree = "<group>"; };
+		11E39A90183ED0E1007C0D08 /* VFLLibraryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFLLibraryViewController.h; sourceTree = "<group>"; };
+		11E39A91183ED0E1007C0D08 /* VFLLibraryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFLLibraryViewController.m; sourceTree = "<group>"; };
+		11E39A93183ED0E1007C0D08 /* VFLLibraryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFLLibraryDetailViewController.h; sourceTree = "<group>"; };
+		11E39A94183ED0E1007C0D08 /* VFLLibraryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFLLibraryDetailViewController.m; sourceTree = "<group>"; };
 		11E39A96183ED0E1007C0D08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		11E39A9C183ED0E1007C0D08 /* View Fellows LibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "View Fellows LibraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E39A9D183ED0E1007C0D08 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -105,18 +105,39 @@
 			children = (
 				11FCAC8D183F18E8006B8E05 /* VFLLibraryDataController.h */,
 				11FCAC8E183F18E8006B8E05 /* VFLLibraryDataController.m */,
-				11E39AB6183ED195007C0D08 /* FellowsLibrary.h */,
-				11E39AB7183ED195007C0D08 /* FellowsLibrary.m */,
-				11C1D366183F2A09004F8C41 /* VFLShelfDataController.h */,
-				11C1D367183F2A09004F8C41 /* VFLShelfDataController.m */,
-				11E39A90183ED0E1007C0D08 /* VFLMasterViewController.h */,
-				11E39A91183ED0E1007C0D08 /* VFLMasterViewController.m */,
-				11E39A93183ED0E1007C0D08 /* VFLDetailViewController.h */,
-				11E39A94183ED0E1007C0D08 /* VFLDetailViewController.m */,
+				11E39A90183ED0E1007C0D08 /* VFLLibraryViewController.h */,
+				11E39A91183ED0E1007C0D08 /* VFLLibraryViewController.m */,
+				11E39A93183ED0E1007C0D08 /* VFLLibraryDetailViewController.h */,
+				11E39A94183ED0E1007C0D08 /* VFLLibraryDetailViewController.m */,
 				11945B9F1841C9EE009F19AA /* VFLLibraryTableViewCell.h */,
 				11945BA01841C9EE009F19AA /* VFLLibraryTableViewCell.m */,
 			);
 			name = Library;
+			sourceTree = "<group>";
+		};
+		11945BA218446B3A009F19AA /* Shelves */ = {
+			isa = PBXGroup;
+			children = (
+				11C1D366183F2A09004F8C41 /* VFLShelfDataController.h */,
+				11C1D367183F2A09004F8C41 /* VFLShelfDataController.m */,
+				11C1D36C183F40FB004F8C41 /* VFLShelvesDetailViewController.h */,
+				11C1D36D183F40FB004F8C41 /* VFLShelvesDetailViewController.m */,
+				11C1D369183F3DD7004F8C41 /* VFLShelvesViewController.h */,
+				11C1D36A183F3DD7004F8C41 /* VFLShelvesViewController.m */,
+			);
+			name = Shelves;
+			sourceTree = "<group>";
+		};
+		11945BA318446B47009F19AA /* Overall App */ = {
+			isa = PBXGroup;
+			children = (
+				11E39AB6183ED195007C0D08 /* FellowsLibrary.h */,
+				11E39AB7183ED195007C0D08 /* FellowsLibrary.m */,
+				11E39A8A183ED0E1007C0D08 /* VFLAppDelegate.h */,
+				11E39A8B183ED0E1007C0D08 /* VFLAppDelegate.m */,
+				11E39A8D183ED0E1007C0D08 /* Main.storyboard */,
+			);
+			name = "Overall App";
 			sourceTree = "<group>";
 		};
 		11E39A6F183ED0E1007C0D08 = {
@@ -153,13 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				11945B9E1841C01B009F19AA /* Library */,
-				11C1D36C183F40FB004F8C41 /* VFLShelvesDetailViewController.h */,
-				11C1D36D183F40FB004F8C41 /* VFLShelvesDetailViewController.m */,
-				11E39A8A183ED0E1007C0D08 /* VFLAppDelegate.h */,
-				11E39A8B183ED0E1007C0D08 /* VFLAppDelegate.m */,
-				11E39A8D183ED0E1007C0D08 /* Main.storyboard */,
-				11C1D369183F3DD7004F8C41 /* VFLShelvesViewController.h */,
-				11C1D36A183F3DD7004F8C41 /* VFLShelvesViewController.m */,
+				11945BA218446B3A009F19AA /* Shelves */,
+				11945BA318446B47009F19AA /* Overall App */,
 				11E39A96183ED0E1007C0D08 /* Images.xcassets */,
 				11E39A82183ED0E1007C0D08 /* Supporting Files */,
 			);
@@ -294,12 +310,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FCAC8F183F18E8006B8E05 /* VFLLibraryDataController.m in Sources */,
-				11E39A92183ED0E1007C0D08 /* VFLMasterViewController.m in Sources */,
+				11E39A92183ED0E1007C0D08 /* VFLLibraryViewController.m in Sources */,
 				11E39A88183ED0E1007C0D08 /* main.m in Sources */,
 				11E39AB8183ED195007C0D08 /* FellowsLibrary.m in Sources */,
 				11945BA11841C9EE009F19AA /* VFLLibraryTableViewCell.m in Sources */,
 				11C1D36E183F40FB004F8C41 /* VFLShelvesDetailViewController.m in Sources */,
-				11E39A95183ED0E1007C0D08 /* VFLDetailViewController.m in Sources */,
+				11E39A95183ED0E1007C0D08 /* VFLLibraryDetailViewController.m in Sources */,
 				11C1D368183F2A09004F8C41 /* VFLShelfDataController.m in Sources */,
 				11C1D36B183F3DD7004F8C41 /* VFLShelvesViewController.m in Sources */,
 				11E39A8C183ED0E1007C0D08 /* VFLAppDelegate.m in Sources */,

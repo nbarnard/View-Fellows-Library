@@ -11,7 +11,7 @@
 
 @class FellowsLibrary;
 
-@interface VFLDetailViewController : UIViewController
+@interface VFLLibraryDetailViewController : UIViewController
 
 @property (strong, nonatomic) FellowsLibrary *library;
 

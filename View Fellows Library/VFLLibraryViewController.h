@@ -10,7 +10,7 @@
 
 @class VFLLibraryDataController;
 
-@interface VFLMasterViewController : UITableViewController
+@interface VFLLibraryViewController : UITableViewController
 
 @property (strong, nonatomic) VFLLibraryDataController *dataController;
 

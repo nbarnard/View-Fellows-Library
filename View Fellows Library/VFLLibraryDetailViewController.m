@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 NMFF Development. All rights reserved.
 //
 
-#import "VFLDetailViewController.h"
+#import "VFLLibraryDetailViewController.h"
 #import "FellowsLibrary.h"
 
-@interface VFLDetailViewController ()
+@interface VFLLibraryDetailViewController ()
 - (void)configureView;
 @end
 
-@implementation VFLDetailViewController
+@implementation VFLLibraryDetailViewController
 
 #pragma mark - Managing the detail item
 
